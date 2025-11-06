@@ -1,0 +1,98 @@
+.quote-page {
+  min-height: calc(100vh - 80px);
+  padding: 3rem 2rem;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.page-header-section {
+  color: #333;
+  padding: 1rem 0;
+  position: sticky;
+  top: 100px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.page-content-text {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.page-content-text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.page-content-text p:last-child {
+  margin-bottom: 0;
+}
+
+.page-card-section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .page-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .page-header-section {
+    position: static;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-page {
+    padding: 2rem 1rem;
+  }
+
+  .page-container {
+    gap: 2rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-description {
+    font-size: 1.1rem;
+  }
+
+  .page-content-text p {
+    font-size: 0.95rem;
+  }
+}
+
