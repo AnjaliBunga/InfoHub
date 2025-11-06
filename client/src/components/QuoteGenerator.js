@@ -12,7 +12,7 @@ const QuoteGenerator = () => {
     setError(null);
 
     try {
-      const response = await axios.get('http://localhost:5000/api/quote');
+      const response = await axios.get('https://infohub-ldqu.onrender.com/api/quote');
       setQuote(response.data);
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to fetch quote');
