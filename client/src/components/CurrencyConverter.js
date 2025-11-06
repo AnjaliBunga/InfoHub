@@ -22,7 +22,7 @@ const CurrencyConverter = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/currency/${numAmount}`
+        `https://infohub-ldqu.onrender.com/api/currency/${numAmount}`
       );
       setCurrencyData(response.data);
     } catch (err) {
