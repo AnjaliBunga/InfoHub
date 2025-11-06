@@ -20,7 +20,7 @@ const WeatherDisplay = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/weather/${encodeURIComponent(city)}`
+        `https://infohub-ldqu.onrender.com/api/weather/${encodeURIComponent(city)}`
       );
       setWeatherData(response.data);
     } catch (err) {
